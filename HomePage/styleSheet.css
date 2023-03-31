@@ -1,0 +1,87 @@
+#header {
+    width: auto;
+    height: 700px;
+    margin-bottom: 1px;
+}
+
+#main {
+    height: 1000px;
+}
+
+#footer {
+    width: auto;
+    height: 250px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+    margin-top: auto;
+}
+
+.footerImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/footer.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    border-style: solid;
+    border-color: black;
+
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    background-color: #40b6e8;
+    padding: 20px;
+    width: 150px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.bannerImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/banner.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.name {
+    font-size: 600%;
+}
+
+.slogan {
+    font-size: 180%;
+}
+
+.bannerText {
+    text-align: center;
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products {
+    text-align: center;
+}
+
+.featured {
+    text-align: center;
+}
+
+.wholeBody {
+    background-image: url(../Images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

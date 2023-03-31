@@ -1,0 +1,25 @@
+#header {
+    background-color: aqua;
+}
+
+#sideNavLeft {
+    background-color: blue;
+    width: 150px;
+    height: 500px;
+    float: left;
+}
+
+#main {
+    background-color: blueviolet;
+    height: 500px;
+}
+
+#footer {
+    background-color: chartreuse;
+    height: 100px;
+}
+
+.container {
+    border-color: aliceblue;
+    border-style: solid;
+}
