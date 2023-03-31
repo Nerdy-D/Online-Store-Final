@@ -26,19 +26,17 @@
     position: relative;
 }
 
-.container {
+/* .container {
     border-style: solid;
-    border-color: black;
-
-}
+    border-color: gainsboro;
+} */
 
 .button {
     display: inline-block;
     position: relative;
-    left: 10%;
-    background-color: #40b6e8;
+    background-color: black;
     padding: 20px;
-    width: 150px;
+    width: 100%;
     color: #ffffff;
     text-align: center;
 }
@@ -72,6 +70,7 @@
 
 .products {
     text-align: center;
+    color: black;
 }
 
 .featured {
@@ -84,4 +83,68 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+
+#homeImage {
+    background-image: url("https://media.istockphoto.com/id/1312128591/vector/home-icon-vector-house-sign.jpg?s=612x612&w=0&k=20&c=jxUT546g8Cfgv1SiAfh2Eos46XI3DqYvPLhxGFaobpE=");
+    background-size: cover;
+    background-position: center;
+}
+
+#aboutImage {
+    background-image: url("https://images.pexels.com/photos/2882509/pexels-photo-2882509.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+}
+
+#buyNowImage {
+    background-image: url("https://images.pexels.com/photos/6097871/pexels-photo-6097871.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+}
+
+#contactUsImage {
+    background-image: url("https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+}
+
+#galleryImage {
+    background-image: url("https://images.pexels.com/photos/3230516/pexels-photo-3230516.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+}
+
+.newProducts {
+    text-align: center;
+    color: azure;
+    font-size: x-large;
+}
+
+#hotChocolateRoll {
+    background-image: url("https://images.pexels.com/photos/5702931/pexels-photo-5702931.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+#applePie {
+    background-image: url("https://images.pexels.com/photos/6163270/pexels-photo-6163270.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+#custardTart {
+    background-image: url("https://images.pexels.com/photos/6605303/pexels-photo-6605303.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+#mudpieCake {
+    background-image: url("https://images.pexels.com/photos/2067436/pexels-photo-2067436.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
