@@ -12,23 +12,118 @@
 </head>
 
 <body>
-    <div id="header">HEADER</div>
-    <div id="sideNavLeft">SIDE NAV LEFT
-        <ul>
-            <a href="../HomePage/index.html">Home</a>
-            <br>
-            <a href="../AboutPage/index.html">About</a>
-            <br>
-            <a href="../BuyNowPage/index.html">Buy Now</a>
-            <br>
-            <a href="../ContactPage/index.html">Contact Us</a>
-            <br>
-            <a href="../GalleryPage/index.html">Gallery</a>
+    <div id="header">
+        <div class="bannerImage">
+            <div class="bannerText">
+                <img src="..//Images/logo.png">
+                <p class="slogan">Home Bakeries Est. 2021</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="sideNav">
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../HomePage/index.html">Home</a>
+
+        </ul>
+        <br>
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../AboutPage/index.html">About</a>
+
+        </ul>
+        <br>
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../BuyNowPage/index.html">Buy Now</a>
+
+        </ul>
+        <br>
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../ContactPage/index.html">Contact Us</a>
+
+        </ul>
+        <br>
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../GalleryPage/index.html">Gallery</a>
         </ul>
     </div>
-    <div id="main">MAIN</div>
-    <div id="footer">FOOTER</div>
+    <div class="wholeBody">
+
+        <div class="row">
+
+            <div class="contactUsHead">Contact Us Now</div>
+            <div class="col-6" id="contactUs">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <br>
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="Your email address..">
+                    <br>
+                    <label for="tnum">Telephone Number</label>
+                    <input type="text" id="tnum" name="telephonenumber" placeholder="Your telephone number..">
+                    <br>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="rsa">South Africa</option>
+                        <option value="ken">Kenya</option>
+                        <option value="eng">England</option>
+                        <option value="nz">New Zealand</option>
+                    </select>
+                    <br>
+                    <label for="subject">Subject</label>
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="whats on your mind?"
+                        style="height:100px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="col-6" id="map">
+                <div class="gMap">Where We Are Located</div><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.707442941008!2d18.60657181588163!3d-33.948651930640466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5aacff8d46c5%3A0xa8fe563c47470b85!2s2%20Arum%20Rd%2C%20Belhar%202%2C%20Cape%20Town%2C%207493!5e0!3m2!1sen!2sza!4v1680376148368!5m2!1sen!2sza"
+                    width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerImage">
+            <div clss="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col" id="footerIcons">
+                            <div classs="header col-md-1">
+                                <p>Follow Us</p>
+                            </div>
+                        </div>
+                        <a href=https://www.instagram.com target="blank">
+                            <img class="icons" src="../Images/Instagram.png" alt="instagram"></a>
+                        <a href=https://www.facebook.com target="blank">
+                            <img class="icons" src="../Images/facebook.png" alt="facebook"></a>
+
+                        <a href="http://www.twitter.com" target="blank">
+                            <img class="icons" src="../Images/twitter.png" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
 </body>
+<script type="text/javascript" src="../ContactPage/majorCode.js"></script>
 
 </html>

@@ -1,25 +1,149 @@
 #header {
-    background-color: aqua;
+    width: auto;
+    height: 250px;
+    margin-bottom: 1px;
 }
 
-#sideNavLeft {
-    background-color: blue;
-    width: 150px;
-    height: 500px;
-    float: left;
+.bannerImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/banner.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-#main {
-    background-color: blueviolet;
-    height: 500px;
+.bannerText {
+    text-align: center;
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.slogan {
+    font-size: 180%;
+}
+
+.wholeBody {
+    background-color: rgb(244, 231, 207);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 #footer {
-    background-color: chartreuse;
-    height: 100px;
+    width: auto;
+    height: 250px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+    margin-top: auto;
+    font-size: xx-large;
+
 }
 
-.container {
-    border-color: aliceblue;
+.footerImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/footer.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.icons {
+    align-items: center;
+    width: 5rem;
+    margin: 1rem;
+}
+
+#sideNav {
+    float: left;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/10/01/58/background-1727498__340.png");
+    height: 1000px;
+    width: 140px;
+    margin-left: -30px;
+    font-size: large;
+}
+
+.navItems {
+    width: 140px;
+    position: fixed;
+    text-align: center;
+    background-color: rgb(244, 231, 207);
     border-style: solid;
+    border-color: rgb(255, 0, 85);
+    border-right: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button {
+    color: rgb(255, 0, 85);
+    font-size: large;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+#contactUs {
+    text-align: left;
+}
+
+input[type=text],
+select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+.contactUsHead {
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: left;
+
+}
+
+#map {
+    margin-top: -85px;
+
+}
+
+.gMap {
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+
 }
