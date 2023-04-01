@@ -66,6 +66,10 @@
     margin: 1rem;
 }
 
+.row img:hover {
+    transform: scale(1.1);
+}
+
 #sideNav {
     float: left;
     background-image: url("https://cdn.pixabay.com/photo/2016/10/10/01/58/background-1727498__340.png");

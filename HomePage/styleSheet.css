@@ -210,3 +210,7 @@
     width: 5rem;
     margin: 1rem;
 }
+
+.row img:hover {
+    transform: scale(1.1);
+}
