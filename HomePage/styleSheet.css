@@ -15,6 +15,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: azure;
     margin-top: auto;
+    font-size: xx-large;
 }
 
 .footerImage {
@@ -71,10 +72,17 @@
 .products {
     text-align: center;
     color: black;
+    border-style: solid;
+    border-color: rgb(0, 255, 140);
+    background-color: aqua;
 }
 
-.featured {
+#featured {
     text-align: center;
+    font-size: x-large;
+    background-color: violet;
+    font-family: fantasy;
+    height: 50%;
 }
 
 .wholeBody {
@@ -125,21 +133,24 @@
     background-image: url("https://images.pexels.com/photos/5702931/pexels-photo-5702931.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 350px;
 }
 
 #applePie {
     background-image: url("https://images.pexels.com/photos/6163270/pexels-photo-6163270.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 350px;
 }
 
 #custardTart {
     background-image: url("https://images.pexels.com/photos/6605303/pexels-photo-6605303.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 350px;
 }
 
 #mudpieCake {
@@ -147,4 +158,54 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 350px;
+}
+
+#strawberryCake {
+    background-image: url("https://images.pexels.com/photos/1414230/pexels-photo-1414230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+#homeMadeBread {
+    background-image: url("https://images.pexels.com/photos/6608542/pexels-photo-6608542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+#afterHours {
+    background-image: url("https://images.pexels.com/photos/10311530/pexels-photo-10311530.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.bannerGrid {
+    background-color: violet;
+    height: 10%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.headBanner {
+    background-color: aqua;
+    border-color: rgb(0, 255, 140);
+    border-style: solid;
+    height: 10%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: black;
+}
+
+.icons {
+    align-items: center;
+    width: 5rem;
+    margin: 1rem;
 }
