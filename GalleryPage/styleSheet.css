@@ -1,25 +1,162 @@
 #header {
-    background-color: aqua;
+    width: auto;
+    height: 250px;
+    margin-bottom: 1px;
 }
 
-#sideNavLeft {
-    background-color: blue;
-    width: 150px;
-    height: 500px;
+.bannerImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/banner.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bannerText {
+    text-align: center;
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.slogan {
+    font-size: 180%;
+}
+
+
+#sideNav {
     float: left;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/10/01/58/background-1727498__340.png");
+    height: 2000px;
+    width: 140px;
+    margin-left: -30px;
+    font-size: large;
 }
 
-#main {
-    background-color: blueviolet;
-    height: 500px;
+.navItems {
+    width: 140px;
+    position: fixed;
+    text-align: center;
+    background-color: rgb(244, 231, 207);
+    border-style: solid;
+    border-color: rgb(255, 0, 85);
+    border-right: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.button {
+    color: rgb(255, 0, 85);
+    font-size: large;
+}
+
+
+.wholeBody {
+    background-color: rgb(244, 231, 207);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2000px;
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 
 #footer {
-    background-color: chartreuse;
-    height: 100px;
+    width: auto;
+    height: 250px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+    margin-top: auto;
+    font-size: xx-large;
+
 }
 
+.footerImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/footer.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.icons {
+    align-items: center;
+    width: 5rem;
+    margin: 1rem;
+}
+
+.galleryHead {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: -330px;
+}
+
+.row {
+    padding: 30px;
+    width: 80%;
+}
+
+
+.row img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.row img:hover {
+    opacity: 5;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 .container {
-    border-color: aliceblue;
-    border-style: solid;
+    position: relative;
+}
+
+
+#imgtext {
+    position: absolute;
+    bottom: 1px;
+    left: 15px;
+    color: rgb(30, 255, 0);
+    background-color: black;
+    font-size: 20px;
+}
+
+.closebtn {
+    position: absolute;
+    top: -42%;
+    right: 15px;
+    color: rgb(38, 255, 0);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#expandedImg {
+    margin-top: -171px;
+    height: 600px;
+
 }
