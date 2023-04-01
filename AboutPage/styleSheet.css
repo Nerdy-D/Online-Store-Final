@@ -36,12 +36,20 @@
     font-family: cursive
 }
 
+.pose {
+    height: 15%;
+    background-image: url("https://media.istockphoto.com/id/155095175/photo/chief.jpg?b=1&s=170667a&w=0&k=20&c=_loyA0lEjyMmefGn5JOCxDh3TGy5TmB7LDlx9lsU_gA=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .wholeBody {
     background-color: rgb(244, 231, 207);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 1500px;
     color: black;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -51,7 +59,7 @@
 #sideNav {
     float: left;
     background-image: url("https://cdn.pixabay.com/photo/2016/10/10/01/58/background-1727498__340.png");
-    height: 1000px;
+    height: 1500px;
     width: 140px;
     margin-left: -30px;
     font-size: large;
