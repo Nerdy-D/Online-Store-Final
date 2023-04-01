@@ -27,10 +27,6 @@
     position: relative;
 }
 
-/* .container {
-    border-style: solid;
-    border-color: gainsboro;
-} */
 
 .button {
     display: inline-block;
@@ -51,9 +47,14 @@
     position: relative;
 }
 
-.name {
-    font-size: 600%;
+.redwoodLogo {
+    background-image: url(..//Images/logo.png);
+    height: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
 }
+
 
 .slogan {
     font-size: 180%;
@@ -64,7 +65,7 @@
     color: azure;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
