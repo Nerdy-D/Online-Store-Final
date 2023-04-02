@@ -12,23 +12,83 @@
 </head>
 
 <body>
-    <div id="header">HEADER</div>
-    <div id="sideNavLeft">SIDE NAV LEFT
-        <ul>
-            <a href="../HomePage/index.html">Home</a>
-            <br>
-            <a href="../AboutPage/index.html">About</a>
-            <br>
-            <a href="../BuyNowPage/index.html">Buy Now</a>
-            <br>
-            <a href="../ContactPage/index.html">Contact Us</a>
-            <br>
-            <a href="../GalleryPage/index.html">Gallery</a>
+    <div id="header">
+        <div class="bannerImage">
+            <div class="bannerText">
+                <img src="..//Images/logo.png">
+                <p class="slogan">Home Bakeries Est. 2021</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="sideNav">
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../HomePage/index.html">Home</a>
+
+        </ul>
+        <br>
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../AboutPage/index.html">About</a>
+
+        </ul>
+        <br>
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../BuyNowPage/index.html">Buy Now</a>
+
+        </ul>
+        <br>
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../ContactPage/index.html">Contact Us</a>
+
+        </ul>
+        <br>
+        <br>
+        <ul class="navItems">
+            <a class="button" href="../GalleryPage/index.html">Gallery</a>
         </ul>
     </div>
-    <div id="main">MAIN</div>
-    <div id="footer">FOOTER</div>
+    <div class="wholeBody">
+        <app id="myVueApp">
+            <div class="products">
+                <product class="item" v-for="product in addToCart" v-bind:name="product.name"
+                    v-bind:image="product.image" v-bind:description="product.description" v-bind:price="product.price"
+                    v-bind:show-add="true" v-on:add-to-add-To-Cart="onAddToCart(product)">
+                </product>
+                <p>{{product}}</p>
+                <p>{{name}}</p>
+            </div>
+        </app>
+    </div>
+    <div id="footer">
+        <div class="footerImage">
+            <div clss="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col" id="footerIcons">
+                            <div classs="header col-md-1">
+                                <p>Follow Us</p>
+                            </div>
+                        </div>
+                        <a href=https://www.instagram.com target="blank">
+                            <img class="icons" src="../Images/Instagram.png" alt="instagram"></a>
+                        <a href=https://www.facebook.com target="blank">
+                            <img class="icons" src="../Images/facebook.png" alt="facebook"></a>
+
+                        <a href="http://www.twitter.com" target="blank">
+                            <img class="icons" src="../Images/twitter.png" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
+<script type="text/javascript" src="../BuyNowPage/majorCode.js"></script>
+<script tyoe="text/javascript" src="../Components/product.js"></script>
 
 </html>

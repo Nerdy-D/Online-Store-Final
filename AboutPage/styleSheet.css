@@ -1,6 +1,7 @@
 #header {
     width: auto;
     height: 250px;
+    margin-bottom: 1px;
 }
 
 .bannerImage {
@@ -22,12 +23,8 @@
     transform: translate(-50%, -50%);
 }
 
-.name {
-    font-size: 400%;
-}
-
 .slogan {
-    font-size: 90%;
+    font-size: 180%;
 }
 
 .aboutHead {
