@@ -54,16 +54,23 @@
     </div>
     <div class="wholeBody">
         <div id="myVueApp">
+            <div class="myProducts">Products
+            </div>
             <div class="products">
                 <product class="item" v-for="product in products" v-bind:name="product.name"
                     v-bind:image="product.image" v-bind:description="product.description" v-bind:price="product.price"
                     v-bind:show-add="true" v-on:add-to-cart="onAddToCart(product)">
                 </product>
+
             </div>
+            <div class="myCart">My Cart</div>
+            <ul class="myCartTotal">
+                <li v-if="cart.length">Cart Total: {{cart.length}}</li>
+            </ul>
             <div class="products">
-                <product class="item" v-for="product in products" v-bind:name=" product.name"
-                    v-bind:image="product.image" v-bind:description="product.description" v-bind:price="product.price"
-                    v-bind:show-remove="true" v-on:remove-from-cart="onRemoveItem(product)">
+                <product class="item" v-for="product in cart" v-bind:name=" product.name" v-bind:image="product.image"
+                    v-bind:description="product.description" v-bind:price="product.price" v-bind:show-remove="true"
+                    v-on:remove-from-cart="onRemoveItem(product)">
                 </product>
             </div>
         </div>

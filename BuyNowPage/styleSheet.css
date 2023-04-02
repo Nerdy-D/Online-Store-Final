@@ -32,7 +32,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 1200px;
     color: black;
     text-align: center;
     font-size: 20px;
@@ -73,7 +73,7 @@
 #sideNav {
     float: left;
     background-image: url("https://cdn.pixabay.com/photo/2016/10/10/01/58/background-1727498__340.png");
-    height: 1000px;
+    height: 1200px;
     width: 140px;
     margin-left: -30px;
     font-size: large;
@@ -124,15 +124,33 @@ a:active {
 
 .item {
     border-style: solid;
+    border-color: rgb(255, 190, 241);
     display: flex;
-    border-color: black;
     flex-direction: column;
     height: 100%;
-    width: 155px;
+
 }
 
 .products {
     display: flex;
-    direction: row;
+    flex-direction: row;
+    height: 100%;
+    overflow-y: auto;
+    column-gap: 10px;
 
+}
+
+.myProducts {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+
+.myCart {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+
+.myCartTotal {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
 }

@@ -256,3 +256,10 @@
 .row img:hover {
     transform: scale(1.1);
 }
+
+.cartLength {
+    font-size: 45px;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+}

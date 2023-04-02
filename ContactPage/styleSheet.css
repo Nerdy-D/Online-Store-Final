@@ -152,3 +152,10 @@ input[type=submit]:hover {
 
 
 }
+
+.cartLength {
+    font-size: 45px;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+}

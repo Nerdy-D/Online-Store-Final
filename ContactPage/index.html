@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <link rel="stylesheet" href="../ContactPage/styleSheet.css">
     <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -94,6 +95,12 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.707442941008!2d18.60657181588163!3d-33.948651930640466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5aacff8d46c5%3A0xa8fe563c47470b85!2s2%20Arum%20Rd%2C%20Belhar%202%2C%20Cape%20Town%2C%207493!5e0!3m2!1sen!2sza!4v1680376148368!5m2!1sen!2sza"
                     width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="myVueApp">
+                    <ul class="cartLength">
+                        <ul v-if="cart.length">Cart Total: {{cart.length}}</ul>
+                    </ul>
+                </div>
+
             </div>
 
         </div>
@@ -125,5 +132,6 @@
 
 </body>
 <script type="text/javascript" src="../ContactPage/majorCode.js"></script>
+<script type="text/javascript" src="../BuyNowPage/majorCode.js"></script>
 
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <link rel="stylesheet" href="../AboutPage/styleSheet.css">
     <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -94,6 +95,12 @@
             non quam lacus. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Aliquet eget sit amet
             tellus. Porttitor rhoncus dolor purus non enim. </p>
         <br>
+        <div id="myVueApp">
+            <ul class="cartLength">
+                <ul v-if="cart.length">Cart Total: {{cart.length}}</ul>
+            </ul>
+        </div>
+
     </div>
     <div id="footer">
         <div class="footerImage">
@@ -120,6 +127,7 @@
     </div>
 
     <script type="text/javascript" src="../AboutPage/majorCode.js"></script>
+    <script type="text/javascript" src="../BuyNowPage/majorCode.js"></script>
 </body>
 
 </html>
