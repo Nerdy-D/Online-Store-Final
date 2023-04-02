@@ -55,6 +55,48 @@
     background-size: 500px;
 }
 
+.redwoodLogo:hover {
+    animation-name: animatepic;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animatepic {
+    0% {
+        transform: rotate(0deg);
+        border-radius: 0;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        border-radius: 0;
+        border-top-right-radius: 50%;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        border-radius: 0;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        border-radius: 0;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        filter: grayscale(50%);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        border-radius: 50%;
+        filter: grayscale(100%);
+    }
+}
 
 .slogan {
     font-size: 180%;

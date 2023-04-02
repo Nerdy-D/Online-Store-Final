@@ -15,33 +15,32 @@ var app = new Vue({
                 price: 'R5.00',
             },
         ],
-        addToCart: [],
+        cart: [],
+    },
+    created: function () {
 
-        created: function () {
+        const jsoncart = localStorage.getItem('addToCart');
+        console.log(jsoncart);
+        if (jsoncart) this.watchlist = JSON.parse(jsoncart);
+    },
 
-            const jsonaddToCart = localStorage.getItem('addToCart');
-            console.log(jsonaddToCart);
-            if (jsonaddToCart) this.watchlist = JSON.parse(jsonaddToCart);
+    methods: {
+        onAddToCart: function (product) {
+
+            this.addToCart.push(product);
+            const jsoncart = JSON.stringify(this.addToCart);
+            localStorage.setItem('cart', jsoncart);
         },
+        onRemoveItem: function (product) {
 
-        methods: {
-            onAddToCart: function (product) {
+            const index = this.addToCart.indexOf(product);
 
-                this.addToCart.push(product);
-                const jsonaddToCart = JSON.stringify(this.addToCart);
-                localStorage.setItem('addToCart', jsonaddToCart);
-            },
-            onRemoveItem: function (product) {
+            if (index > -1) {
+                this.addToCart.splice(index, 1);
+                const jsoncart = JSON.stringify(this.addToCart);
 
-                const index = this.addToCart.indexOf(product);
-
-                if (index > -1) {
-                    this.addToCart.splice(index, 1);
-                    const jsonaddToCart = JSON.stringify(this.addToCart);
-
-                    localStorage.setItem('addToCart', jsonaddToCart);
-                }
-            },
+                localStorage.setItem('addToCart', jsoncart);
+            }
         },
-    }
+    },
 });

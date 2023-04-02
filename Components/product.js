@@ -8,7 +8,7 @@ Vue.component('product', {
     </h3>
     <p class="description">{{description}}</p>
     <p class="price">{{price}}</p>
-    <button v-if="showAdd" v-on:click="$emit('add-to-add-to-cart')">Add</button>
-    <button v-if="showRemove" v-on:click="$emit('remove-from-add-to-cart')">Remove</button>
+    <button v-if="showAdd" v-on:click="$emit('addToCart')">Add</button>
+    <button v-if="showRemove" v-on:click="$emit('removeFromCart')">Remove</button>
     </div>`,
 });

@@ -57,13 +57,13 @@
             <div class="products">
                 <product class="item" v-for="product in products" v-bind:name="product.name"
                     v-bind:image="product.image" v-bind:description="product.description" v-bind:price="product.price"
-                    v-bind:show-add="true" v-on:add-to-add-To-Cart="onAddToCart(product)">
+                    v-bind:show-add="true" v-on:add-to-cart="onAddToCart(product)">
                 </product>
             </div>
             <div class="products">
-                <product class="item" v-for="product in products" v-bind:name="product.name"
+                <product class="item" v-for="product in products" v-bind:name=" product.name"
                     v-bind:image="product.image" v-bind:description="product.description" v-bind:price="product.price"
-                    v-bind:show-remove="true" v-on:remove-from-add-To-Cart="onRemoveItem(product)">
+                    v-bind:show-remove="true" v-on:remove-from-cart="onRemoveItem(product)">
                 </product>
             </div>
         </div>
